@@ -1,7 +1,7 @@
 {
-  "name": "kf-tailwind",
-  "version": "4.0.1",
-  "description": "Tailwind 4 variables and styles.",
+  "name": "@kreftforeningen/web-css",
+  "version": "1.0.0",
+  "description": "Variables and styles.",
   "type": "module",
   "style": "index.css",
   "exports": {
@@ -20,19 +20,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kreftforeningen/kf-tailwind.git"
+    "url": "git+https://github.com/kreftforeningen/web-css.git"
   },
   "scripts": {
     "build": "node extract-css-vars.js"
   },
   "keywords": [
-    "tailwind",
     "css"
   ],
   "author": "Asbjørn Ness",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kreftforeningen/kf-tailwind/issues"
+    "url": "https://github.com/kreftforeningen/web-css/issues"
   },
-  "homepage": "https://github.com/kreftforeningen/kf-tailwind#readme"
+  "homepage": "https://github.com/kreftforeningen/web-css#readme"
 }

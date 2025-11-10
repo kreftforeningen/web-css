@@ -1,11 +1,11 @@
-# kf-tailwind
+# @kreftforeningen/web-css
 
-Tailwind CSS styles for Kreftforeningen based on Tailwind 4.
+Style variables for Kreftforeningen.
 
 ## Installation
 
-- `pnpm add kf-tailwind`
-- `@import "kf-tailwind/index.css";` at the top of your main tailwind css file
+- `pnpm add @kreftforeningen/web-css`
+- `@import "@kreftforeningen/web-css";` at the top of your main css file
 
 ## Content
 
@@ -57,4 +57,4 @@ This will generate:
 
 ## NPM.js
 
-This git is published as a package on https://www.npmjs.com/package/kf-tailwind
+This git is published as a package on https://www.npmjs.com/package/@kreftforeningen/web-css
