@@ -182,6 +182,7 @@
   --kf-spacing: 0.25rem;
 
   /* Breakpoints */
+  --kf-breakpoint-xs: 20rem;
   --kf-breakpoint-sm: 40rem;
   --kf-breakpoint-md: 48rem;
   --kf-breakpoint-lg: 64rem;
