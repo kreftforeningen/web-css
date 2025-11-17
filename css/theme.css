@@ -16,13 +16,13 @@ body {
 /* Link styles */
 
 a {
-  color: var(--kf-color-blue-600);
-  text-decoration: none;
+  color: var(--kf-color-blue-700);
+  text-decoration: underline;
   transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--kf-color-blue-700);
+  color: var(--kf-color-blue-800);
 }
 
 a:active {
@@ -30,13 +30,13 @@ a:active {
 }
 
 .dark a {
-  color: var(--kf-color-blue-400);
+  color: var(--kf-color-blue-200);
 }
 
 .dark a:hover {
-  color: var(--kf-color-blue-500);
+  color: var(--kf-color-blue-100);
 }
 
 .dark a:active {
-  color: var(--kf-color-blue-600);
+  color: var(--kf-color-blue-100);
 }
