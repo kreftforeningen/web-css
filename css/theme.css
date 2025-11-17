@@ -40,3 +40,40 @@ a:active {
 .dark a:active {
   color: var(--kf-color-blue-100);
 }
+
+/* Heading styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--kf-font-condensed);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--kf-font-size-4xl);
+}
+
+h2 {
+  font-size: var(--kf-font-size-3xl);
+}
+
+h3 {
+  font-size: var(--kf-font-size-2xl);
+}
+
+h4 {
+  font-size: var(--kf-font-size-xl);
+}
+
+h5 {
+  font-size: var(--kf-font-size-lg);
+}
+
+h6 {
+  font-size: var(--kf-font-size-md);
+}
