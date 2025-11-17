@@ -1,0 +1,42 @@
+/* Base styles */
+
+body {
+  font-family: var(--kf-font-sans);
+  font-size: var(--kf-font-size-md);
+  line-height: 1.5;
+  color: var(--kf-color-gray-950);
+  background-color: var(--kf-color-gray-50);
+}
+
+.dark body {
+  color: var(--kf-color-gray-50);
+  background-color: var(--kf-color-gray-950);
+}
+
+/* Link styles */
+
+a {
+  color: var(--kf-color-blue-600);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--kf-color-blue-700);
+}
+
+a:active {
+  color: var(--kf-color-blue-800);
+}
+
+.dark a {
+  color: var(--kf-color-blue-400);
+}
+
+.dark a:hover {
+  color: var(--kf-color-blue-500);
+}
+
+.dark a:active {
+  color: var(--kf-color-blue-600);
+}

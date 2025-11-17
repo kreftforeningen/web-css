@@ -1,6 +1,7 @@
 @import "./fonts/index.css";
 @import "./css/normalize.css";
 @import "./css/reset.css";
+@import "./css/theme.css";
 
 :root {
   --kf-font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system,
