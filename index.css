@@ -131,8 +131,6 @@
   --kf-color-pink-ribbon-950: oklch(0.53654 0.22086 354.12);
 
   --kf-border-width: 2px;
-  --kf-radius-full: 9999px;
-  --kf-radius-md: 0.375rem;
   --kf-btn-font-size: 1rem;
   --kf-btn-font-weight: 500;
   --kf-btn-gap: 0.5rem;
@@ -143,11 +141,13 @@
   --kf-radius-none: 0rem;
   --kf-radius-sm: 0.125rem;
   --kf-radius: 0.25rem;
+  --kf-radius-md: 0.375rem;
   --kf-radius-lg: 0.5rem;
   --kf-radius-xl: 0.75rem;
   --kf-radius-2xl: 1rem;
   --kf-radius-3xl: 1.5rem;
   --kf-radius-4xl: 2rem;
+  --kf-radius-full: 9999px;
 
   /* Extended border widths */
   --kf-border-0: 0px;
