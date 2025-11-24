@@ -11,16 +11,8 @@
   --kf-font-condensed: "IBM Plex Sans Condensed", ui-sans-serif, system-ui;
   --kf-font-serif: "IBM Plex Serif", ui-serif, Georgia, Cambria, Times New Roman;
 
-  --kf-hex-color-black: #000;
-  --kf-hex-color-white: #fff;
-  --kf-hex-color-blue: #469eba;
-  --kf-hex-color-green: #50750f;
-  --kf-hex-color-gray: #666;
-  --kf-hex-color-orange: #e49034;
-  --kf-hex-color-pink: #a94773;
-  --kf-hex-color-purple: #773e89;
-  --kf-hex-color-red: #bc2967;
-  --kf-hex-color-vipps: #ff5b24;
+  --kf-color-black: oklch(0% 0 0);
+  --kf-color-white: oklch(100% 0 0);
 
   --kf-color-gray-50: oklch(98.5% 0 0);
   --kf-color-gray-100: oklch(96.086% 0 0);
@@ -106,29 +98,29 @@
   --kf-color-red-900: oklch(0.4008 0.1269 359.23);
   --kf-color-red-950: oklch(0.28 0.06 0);
 
-  --kf-color-vipps-50: oklch(0.9738 0.0151 54.93);
-  --kf-color-vipps-100: oklch(0.9405 0.0365 58.04);
-  --kf-color-vipps-200: oklch(0.8756 0.0758 52.88);
-  --kf-color-vipps-300: oklch(0.7972 0.128 49.18);
-  --kf-color-vipps-400: oklch(0.7127 0.1871 40.96);
-  --kf-color-vipps-500: oklch(0.6838 0.2092 37.3);
-  --kf-color-vipps-600: oklch(0.6186 0.2288 32.46);
-  --kf-color-vipps-700: oklch(0.5336 0.202 31.27);
-  --kf-color-vipps-800: oklch(0.4522 0.1675 30.24);
-  --kf-color-vipps-900: oklch(41.745% 0.1198 34.356);
-  --kf-color-vipps-950: oklch(0.2557 0.0904 29.55);
+  --vipps-color-50: oklch(0.9738 0.0151 54.93);
+  --vipps-color-100: oklch(0.9405 0.0365 58.04);
+  --vipps-color-200: oklch(0.8756 0.0758 52.88);
+  --vipps-color-300: oklch(0.7972 0.128 49.18);
+  --vipps-color-400: oklch(0.7127 0.1871 40.96);
+  --vipps-color-500: oklch(0.6838 0.2092 37.3);
+  --vipps-color-600: oklch(0.6186 0.2288 32.46);
+  --vipps-color-700: oklch(0.5336 0.202 31.27);
+  --vipps-color-800: oklch(0.4522 0.1675 30.24);
+  --vipps-color-900: oklch(41.745% 0.1198 34.356);
+  --vipps-color-950: oklch(0.2557 0.0904 29.55);
 
-  --kf-color-pink-ribbon-50: oklch(0.93611 0.03855 348.82);
-  --kf-color-pink-ribbon-100: oklch(0.86806 0.07588 349.94);
-  --kf-color-pink-ribbon-200: oklch(0.80001 0.11321 351.06);
-  --kf-color-pink-ribbon-300: oklch(0.73196 0.15054 352.18);
-  --kf-color-pink-ribbon-400: oklch(0.66391 0.18787 353.31);
-  --kf-color-pink-ribbon-500: oklch(0.59586 0.2252 354.43);
-  --kf-color-pink-ribbon-600: oklch(0.584 0.22433 354.37);
-  --kf-color-pink-ribbon-700: oklch(0.57213 0.22346 354.3);
-  --kf-color-pink-ribbon-800: oklch(0.56027 0.22259 354.24);
-  --kf-color-pink-ribbon-900: oklch(0.54841 0.22173 354.18);
-  --kf-color-pink-ribbon-950: oklch(0.53654 0.22086 354.12);
+  --pink-ribbon-color-50: oklch(0.93611 0.03855 348.82);
+  --pink-ribbon-color-100: oklch(0.86806 0.07588 349.94);
+  --pink-ribbon-color-200: oklch(0.80001 0.11321 351.06);
+  --pink-ribbon-color-300: oklch(0.73196 0.15054 352.18);
+  --pink-ribbon-color-400: oklch(0.66391 0.18787 353.31);
+  --pink-ribbon-color-500: oklch(0.59586 0.2252 354.43);
+  --pink-ribbon-color-600: oklch(0.584 0.22433 354.37);
+  --pink-ribbon-color-700: oklch(0.57213 0.22346 354.3);
+  --pink-ribbon-color-800: oklch(0.56027 0.22259 354.24);
+  --pink-ribbon-color-900: oklch(0.54841 0.22173 354.18);
+  --pink-ribbon-color-950: oklch(0.53654 0.22086 354.12);
 
   --kf-border-width: 2px;
   --kf-btn-font-size: 1rem;

@@ -1,7 +1,7 @@
 [
   {
     "name": "gray",
-    "variable": "--color-gray",
+    "variable": "--kf-color-gray",
     "values": {
       "50": {
         "oklch": "oklch(98.5% 0 0)",
@@ -62,7 +62,7 @@
   },
   {
     "name": "blue",
-    "variable": "--color-blue",
+    "variable": "--kf-color-blue",
     "values": {
       "50": {
         "oklch": "oklch(0.976 0.0099 212.52)",
@@ -123,7 +123,7 @@
   },
   {
     "name": "green",
-    "variable": "--color-green",
+    "variable": "--kf-color-green",
     "values": {
       "50": {
         "oklch": "oklch(0.9872 0.0305 116.92)",
@@ -184,7 +184,7 @@
   },
   {
     "name": "orange",
-    "variable": "--color-orange",
+    "variable": "--kf-color-orange",
     "values": {
       "50": {
         "oklch": "oklch(0.9825 0.0139 88.68)",
@@ -245,7 +245,7 @@
   },
   {
     "name": "pink",
-    "variable": "--color-pink",
+    "variable": "--kf-color-pink",
     "values": {
       "50": {
         "oklch": "oklch(0.9737 0.0091 341.8)",
@@ -306,7 +306,7 @@
   },
   {
     "name": "purple",
-    "variable": "--color-purple",
+    "variable": "--kf-color-purple",
     "values": {
       "50": {
         "oklch": "oklch(0.9798 0.0073 312.3)",
@@ -367,7 +367,7 @@
   },
   {
     "name": "red",
-    "variable": "--color-red",
+    "variable": "--kf-color-red",
     "values": {
       "50": {
         "oklch": "oklch(0.9725 0.0116 342.64)",

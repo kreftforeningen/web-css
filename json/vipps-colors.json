@@ -1,7 +1,7 @@
 [
   {
     "name": "vipps",
-    "variable": "--color-vipps",
+    "variable": "--vipps-color",
     "values": {
       "50": {
         "oklch": "oklch(0.9738 0.0151 54.93)",

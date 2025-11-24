@@ -52,8 +52,9 @@ pnpm run build
 
 This will generate:
 
-- `json/colors.json` with all `--kf-hex-color-***` variables
-- `json/extended-colors.json` with all `--color-***` variables from the `@theme { ... }` block
+- `json/colors.json` with all `--kf-color-*` variables
+- `json/vipps-colors.json` with `--vipps-color-*` variables
+- `json/pink-ribbon-colors.json` with `--pink-ribbon-color-*` variables
 
 ## NPM.js
 

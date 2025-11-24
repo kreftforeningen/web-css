@@ -1,7 +1,7 @@
 [
   {
     "name": "pink-ribbon",
-    "variable": "--color-pink-ribbon",
+    "variable": "--pink-ribbon-color",
     "values": {
       "50": {
         "oklch": "oklch(0.93611 0.03855 348.82)",
