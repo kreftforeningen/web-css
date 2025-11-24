@@ -10,6 +10,8 @@ const pinkRibbonColorsFile = path.join(jsonDir, "pink-ribbon-colors.json");
 const css = fs.readFileSync(cssFile, "utf8");
 
 const kfColorVarRegex = /--kf-color-([a-zA-Z0-9-]+)-([0-9]{2,3}):\s*([^;]+);/g;
+const kfColorVarNoShadeRegex =
+  /--kf-color-([a-zA-Z]+)(?!-[0-9]{2,3}):\s*([^;]+);/g;
 const vippsColorVarRegex = /--vipps-color-([0-9]{2,3}):\s*([^;]+);/g;
 const pinkRibbonColorVarRegex = /--pink-ribbon-color-([0-9]{2,3}):\s*([^;]+);/g;
 
@@ -20,6 +22,12 @@ while ((match = kfColorVarRegex.exec(css)) !== null) {
   const [, name, shade, value] = match;
   if (!colorGroups[name]) colorGroups[name] = {};
   colorGroups[name][shade] = value.trim();
+}
+
+while ((match = kfColorVarNoShadeRegex.exec(css)) !== null) {
+  const [, name, value] = match;
+  if (!colorGroups[name]) colorGroups[name] = {};
+  colorGroups[name].base = value.trim();
 }
 
 const vippsColors = {};

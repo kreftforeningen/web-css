@@ -425,5 +425,27 @@
         "rgba": "rgba(64, 27, 40, 1)"
       }
     }
+  },
+  {
+    "name": "black",
+    "variable": "--kf-color-black",
+    "values": {
+      "base": {
+        "oklch": "oklch(0% 0 0)",
+        "hex": "#000000",
+        "rgba": "rgba(0, 0, 0, 1)"
+      }
+    }
+  },
+  {
+    "name": "white",
+    "variable": "--kf-color-white",
+    "values": {
+      "base": {
+        "oklch": "oklch(100% 0 0)",
+        "hex": "#ffffff",
+        "rgba": "rgba(255, 255, 255, 1)"
+      }
+    }
   }
 ]

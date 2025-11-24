@@ -1,6 +1,6 @@
 {
   "name": "@kreftforeningen/web-css",
-  "version": "1.0.13",
+  "version": "1.0.15",
   "description": "Variables and styles.",
   "type": "module",
   "style": "index.css",
