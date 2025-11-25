@@ -4,7 +4,7 @@
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 400;
-  src: url("http://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-regular.woff2")
+  src: url("https://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-regular.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* ibm-plex-serif-italic - latin */
@@ -13,7 +13,7 @@
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 400;
-  src: url("http://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-italic.woff2")
+  src: url("https://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-italic.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* ibm-plex-serif-600 - latin */
@@ -22,7 +22,7 @@
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 600;
-  src: url("http://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-600.woff2")
+  src: url("https://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-600.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* ibm-plex-serif-600italic - latin */
@@ -31,6 +31,6 @@
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 600;
-  src: url("http://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-600italic.woff2")
+  src: url("https://cdn.kreftforeningen.no/fonts/ibm-plex-serif-v19-latin-600italic.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
