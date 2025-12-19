@@ -1,6 +1,6 @@
 {
   "name": "@kreftforeningen/web-css",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Variables and styles.",
   "type": "module",
   "style": "index.css",
@@ -24,7 +24,9 @@
     "url": "git+https://github.com/kreftforeningen/web-css.git"
   },
   "scripts": {
-    "build": "node extract-css-vars.js"
+    "build": "node extract-css-vars.js",
+    "check-types": "tsc --noEmit",
+    "release": "npm publish --access public --no-git-checks"
   },
   "keywords": [
     "css"
