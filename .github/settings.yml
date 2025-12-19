@@ -1,0 +1,23 @@
+repository:
+  description: "Variables and styles for Kreftforeningen."
+  homepage: "https://www.npmjs.com/package/@kreftforeningen/web-css"
+  topics:
+    - css
+    - design-system
+    - variables
+    - npm-package
+
+  private: false
+  has_issues: true
+  has_projects: true
+  has_wiki: false
+  has_downloads: true
+  default_branch: main
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_auto_merge: false
+  delete_branch_on_merge: false
+  allow_update_branch: true
+  enable_automated_security_fixes: true
+  enable_vulnerability_alerts: true
