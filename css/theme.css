@@ -30,32 +30,30 @@ body {
   background-color: var(--kf-color-gray-950);
 }
 
-/* Link styles */
+/* Typography styles */
 
-a {
-  color: var(--kf-color-blue-700);
-  text-decoration: underline;
-  transition: color 0.2s ease-in-out;
+.typography {
+  & a {
+    color: var(--kf-color-blue-700);
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+  }
+
+  & a:hover,
+  & a:active {
+    color: var(--kf-color-blue-800);
+  }
 }
 
-a:hover {
-  color: var(--kf-color-blue-800);
-}
+.dark .typography {
+  & a {
+    color: var(--kf-color-blue-200);
+  }
 
-a:active {
-  color: var(--kf-color-blue-800);
-}
-
-.dark a {
-  color: var(--kf-color-blue-200);
-}
-
-.dark a:hover {
-  color: var(--kf-color-blue-100);
-}
-
-.dark a:active {
-  color: var(--kf-color-blue-100);
+  & a:hover,
+  & a:active {
+    color: var(--kf-color-blue-100);
+  }
 }
 
 /* Heading styles */
