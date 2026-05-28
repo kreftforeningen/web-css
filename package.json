@@ -1,8 +1,9 @@
 {
   "name": "@kreftforeningen/web-css",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Variables and styles.",
   "type": "module",
+  "packageManager": "pnpm@11.0.0",
   "style": "index.css",
   "exports": {
     ".": {
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "build": "node extract-css-vars.js",
-    "release": "npm publish --access public --no-git-checks"
+    "release": "pnpm publish --access public --no-git-checks"
   },
   "keywords": [
     "css"
