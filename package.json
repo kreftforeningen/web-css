@@ -3,7 +3,7 @@
   "version": "1.0.21",
   "description": "Variables and styles.",
   "type": "module",
-  "packageManager": "pnpm@11.0.0",
+  "packageManager": "pnpm@11.27.1",
   "style": "index.css",
   "exports": {
     ".": {

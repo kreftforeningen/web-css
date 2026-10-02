@@ -1,0 +1,21 @@
+---
+description: When the user asks to update packages, run the pnpm outdated/audit/update workflow respecting minimumReleaseAge.
+alwaysApply: false
+---
+
+# Update packages
+
+When asked to "update packages" (or equivalent), do this in the repo root:
+
+1. Read `pnpm-workspace.yaml` (`minimumReleaseAge`, `minimumReleaseAgeExclude`, `overrides`).
+2. Run `pnpm outdated -r`. The **Latest** column already excludes releases younger than `minimumReleaseAge` (currently 10080 minutes / 7 days). Do not install a newer version than that Latest.
+3. Update outdated packages across the workspace (root and `.github/scripts/*`):
+   - Bump `package.json` ranges/pins, then install. Keep related packages on the same version (AWS SDK clients, Lexical packages).
+   - Align GitHub-script pins with the root app when they share a dependency.
+   - Skip **major** upgrades (e.g. TypeScript 6 → 7) unless the user asked for majors or `pnpm audit` requires them.
+   - If `pnpm update` fails with a release-age / no-matching-version error, leave that package on the last eligible version. Do not add it to `minimumReleaseAgeExclude` just to get Latest.
+4. Run `pnpm audit`.
+   - If there are vulnerabilities, add a `pnpm-workspace.yaml` `overrides` entry to a patched version.
+   - If that patched version is younger than `minimumReleaseAge`, also add the package name to `minimumReleaseAgeExclude`. Use exclude only for security (or an existing exclude like `qs`), not for routine updates.
+5. Finish with `pnpm update -r` so the lockfile matches.
+6. Report what moved, what was skipped (majors / too new), and any override or exclude changes.

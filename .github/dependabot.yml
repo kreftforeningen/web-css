@@ -1,0 +1,12 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+
+    # No normal dependency-update PRs;
+    # security PRs are still allowed.
+    open-pull-requests-limit: 0
