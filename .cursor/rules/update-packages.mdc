@@ -12,10 +12,14 @@ When asked to "update packages" (or equivalent), do this in the repo root:
 3. Update outdated packages across the workspace (root and `.github/scripts/*`):
    - Bump `package.json` ranges/pins, then install. Keep related packages on the same version (AWS SDK clients, Lexical packages).
    - Align GitHub-script pins with the root app when they share a dependency.
-   - Skip **major** upgrades (e.g. TypeScript 6 → 7) unless the user asked for majors or `pnpm audit` requires them.
+   - Skip **major** upgrades (e.g. TypeScript 6 → 7) unless the user asked for majors. An audit finding does not authorize a major, including when the only fix is a major or there is no patched version. Report that case instead.
    - If `pnpm update` fails with a release-age / no-matching-version error, leave that package on the last eligible version. Do not add it to `minimumReleaseAgeExclude` just to get Latest.
 4. Run `pnpm audit`.
-   - If there are vulnerabilities, add a `pnpm-workspace.yaml` `overrides` entry to a patched version.
-   - If that patched version is younger than `minimumReleaseAge`, also add the package name to `minimumReleaseAgeExclude`. Use exclude only for security (or an existing exclude like `qs`), not for routine updates.
+   - Review the excludes and overrides already in `pnpm-workspace.yaml`.
+   - Keep an override when audit still needs that floor. Raise it only when the current floor is still vulnerable. Do not add a second override for a package that already has one.
+   - Remove a package from `minimumReleaseAgeExclude` once the patched version that put it there is older than `minimumReleaseAge`. Leave its override in place until the tree resolves to a patched version without that override.
+   - If an advisory has a patched version, add or raise an `overrides` entry to that version. If that version is younger than `minimumReleaseAge`, also add the package name to `minimumReleaseAgeExclude`. Use exclude only for that security patch, not for routine updates.
+   - If the patched range is empty or `<0.0.0`, do not add an override, do not add an exclude, and do not upgrade a direct dependency to a new major to escape it. Report the package, severity, and path, then continue.
+   - Run `pnpm audit` again after any override change. A remaining advisory with no patched version is expected.
 5. Finish with `pnpm update -r` so the lockfile matches.
-6. Report what moved, what was skipped (majors / too new), and any override or exclude changes.
+6. Report what moved, what was skipped (majors / too new), any override or exclude added or removed, and any advisory left in place because it has no patched version.
